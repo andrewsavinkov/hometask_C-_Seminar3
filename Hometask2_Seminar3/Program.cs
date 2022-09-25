@@ -28,7 +28,7 @@ double ThreeDimLength(double[] coordInputOne, double[] coordInputTwo)
     double yComponent = Math.Pow(coordInputTwo[1] - coordInputOne[1], 2);
     double zComponent = Math.Pow(coordInputTwo[2] - coordInputOne[2], 2);
     double result = Math.Sqrt(xComponent + yComponent + zComponent);
-    return result;
+    return Math.Round(result, 2);
 }
 
 double[] coordOne = ReadData("Введите координаты в формате: (x,y,z)");
